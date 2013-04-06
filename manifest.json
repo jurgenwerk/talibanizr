@@ -1,0 +1,23 @@
+{
+  // Required
+  "name": "AtaSigorta TalibanizR",
+  "version": "1",
+  "manifest_version": 2,
+  "icons": { 
+           "16": "icon16.png",
+           "48": "icon48.png",
+           "128": "icon128.png"
+           },
+  // Recommended
+  "description": "Renames LJATASIGORTA to TALIBANI",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["jquery.191.js", "content_script.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ]
+}
+
