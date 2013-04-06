@@ -1,4 +1,3 @@
-
 // for the first 5 seconds try to rename link texts because each 
 // iframe asynchronously takes undetermined time to load their content
 
@@ -7,7 +6,6 @@ var count_p = 0;
 renameLinks_p();
 
 function renameLinks_p() {
-   
     myInterval = setInterval("renameLinks()", freq);  // run
 }
 
